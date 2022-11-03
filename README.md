@@ -52,6 +52,8 @@
 
 # 测试部署
 
+测试网络是基于上述架构图（TargetC network部分）进行搭建和测试
+
 跳转查看测试网络部署操作过程 ➡️ [README](./test-network/README-cn.md)  
 
 注：当前仅支持链码测试，待后续功能上传后，逐步开发其它的Demo
@@ -63,3 +65,20 @@
 [Hyperledger-Fabric官方文档](https://hyperledger-fabric.readthedocs.io/en/latest/whatis.html)  
 
 [go-zero官方文档](https://github.com/zeromicro/go-zero)
+
+最后，欢迎更多小伙伴一起加入，实现我们这个智能合同区块链！
+
+如有意向或者其它问题可以加微信，备注来意，感谢支持！
+
+ <a href="https://www.gogeek.com.cn/" title="gogeek" target="_blank">
+      <img height="200px" src="https://img.gejiba.com/images/a70e4eb9d06f8822a05e36b2acd48f8a.jpg" >
+</a>
+
+<p align="center">
+  <b>SPONSORED BY</b>
+</p>
+<p align="center">
+   <a href="https://www.gogeek.com.cn/" title="gogeek" target="_blank">
+      <img height="200px" src="https://img.gejiba.com/images/96b6d150bd758b13d66aec66cb18044e.jpg" title="gogeek">
+   </a>
+</p>
