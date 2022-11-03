@@ -1,8 +1,8 @@
-#Target-C
+# Target-C 
 简体中文 | [English](./README-en.md)
 <p>
 	<p align="center">
-		<img src="https://img.gejiba.com/images/77641b7520af20c7e065ffad2a7e5480.png" height=180px>
+		<img src="https://img.gejiba.com/images/295a05462dbbae2f6c7059cd52de60a8.png" height=180px>
 	</p>
 	<p align="center">
 		<font size=6 face="宋体">智能合同区块链</font>
