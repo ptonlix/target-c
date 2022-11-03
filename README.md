@@ -17,7 +17,7 @@
 <img alt="Redis" src="https://img.shields.io/badge/Redis-6.2%2B-yellowgreen">
 <img alt="go-zero" src="https://img.shields.io/badge/go--zero-1.4.1-orange">
 <img alt="Hyperlegder-Fabric" src="https://img.shields.io/badge/Hyperlegder--Fabirc-2.4-blue">
-<img alt="license" src="https://img.shields.io/badge/license-GPL-lightgrey">
+<img alt="license" src="https://img.shields.io/badge/license-MIT-lightgrey">
 </p>
 
 # 项目介绍
