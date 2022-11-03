@@ -1,0 +1,64 @@
+# Copyright IBM Corp. All Rights Reserved.
+#
+# SPDX-License-Identifier: Apache-2.0
+#
+
+version: '3.7'
+services:
+  peer0.company.example.com:
+    container_name: peer0.company.example.com
+    image: hyperledger/fabric-peer:latest
+    labels:
+      service: hyperledger-fabric
+    environment:
+      #Generic peer variables
+      - CORE_VM_ENDPOINT=unix:///host/var/run/docker.sock
+      - CORE_VM_DOCKER_HOSTCONFIG_NETWORKMODE=targetc_test
+    volumes:
+      - ./docker/peercfg:/etc/hyperledger/peercfg
+      - ${DOCKER_SOCK}:/host/var/run/docker.sock
+  
+  peer0.person.example.com:
+    container_name: peer0.person.example.com
+    image: hyperledger/fabric-peer:latest
+    labels:
+      service: hyperledger-fabric
+    environment:
+      #Generic peer variables
+      - CORE_VM_ENDPOINT=unix:///host/var/run/docker.sock
+      - CORE_VM_DOCKER_HOSTCONFIG_NETWORKMODE=targetc_test
+    volumes:
+      - ./docker/peercfg:/etc/hyperledger/peercfg
+      - ${DOCKER_SOCK}:/host/var/run/docker.sock
+
+  peer0.government.example.com:
+    container_name: peer0.government.example.com
+    image: hyperledger/fabric-peer:latest
+    labels:
+      service: hyperledger-fabric
+    environment:
+      #Generic peer variables
+      - CORE_VM_ENDPOINT=unix:///host/var/run/docker.sock
+      - CORE_VM_DOCKER_HOSTCONFIG_NETWORKMODE=targetc_test
+    volumes:
+      - ./docker/peercfg:/etc/hyperledger/peercfg
+      - ${DOCKER_SOCK}:/host/var/run/docker.sock
+    
+  peer0.targetc.example.com:
+    container_name: peer0.targetc.example.com
+    image: hyperledger/fabric-peer:latest
+    labels:
+      service: hyperledger-fabric
+    environment:
+      #Generic peer variables
+      - CORE_VM_ENDPOINT=unix:///host/var/run/docker.sock
+      - CORE_VM_DOCKER_HOSTCONFIG_NETWORKMODE=targetc_test
+    volumes:
+      - ./docker/peercfg:/etc/hyperledger/peercfg
+      - ${DOCKER_SOCK}:/host/var/run/docker.sock
+  
+  cli:
+    container_name: cli
+    image: hyperledger/fabric-tools:latest
+    volumes:
+      - ./docker/peercfg:/etc/hyperledger/peercfg
